@@ -100,6 +100,7 @@
 		console.log('Before: ' + myVideo.volume);
     myVideo.volume = volumeSlider.value / 100;
     console.log('After: ' + myVideo.volume);
+		document.getElementById("volume").innerHTML = volumeSlider.value / 100;
 	}
 
 	function gray() {
