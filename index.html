@@ -100,12 +100,13 @@
 		console.log('Before: ' + myVideo.volume);
     myVideo.volume = volumeSlider.value / 100;
     console.log('After: ' + myVideo.volume);
-		document.getElementById("volume").innerHTML = (volumeSlider.value / 100) * 10;
+		document.getElementById("volume").innerHTML = volumeSlider.value / 100;
 	}
 
 	function gray() {
 		console.log("In grayscale")
 		// Utilize the existing grayscale class.
+		document.getElementById("myVideo").classList.add('grayscale');
 	}
 	function color() {
 		console.log("In color")
