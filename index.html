@@ -100,7 +100,7 @@
 		console.log('Before: ' + myVideo.volume);
     myVideo.volume = volumeSlider.value / 100;
     console.log('After: ' + myVideo.volume);
-		document.getElementById("volume").innerHTML = volumeSlider.value / 100;
+		document.getElementById("volume").innerHTML = (volumeSlider.value / 100) * 100;
 	}
 
 	function gray() {
@@ -111,6 +111,7 @@
 	function color() {
 		console.log("In color")
 		// Remove the existing grayscale class.
+		document.getElementById("myVideo").classList.remove('grayscale');
 	}
 	// Not sure if we can test for this???
 	function random(){
