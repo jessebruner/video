@@ -88,7 +88,7 @@
 			myVideo.muted = false;
 			document.getElementById("mute").innerHTML = "Mute";
 		} else {
-			console.log("muted");
+			console.log("mute");
 			myVideo.muted = true;
 			document.getElementById("mute").innerHTML = "Unmute";
 		}
@@ -97,6 +97,9 @@
 		// Change the volume (0 is off, 100 is full volume, everything else is proportionally in between)
 		// Make sure to update the volume element.
 		// Update the console log with the new volume as well.
+		console.log('Before: ' + myVideo.volume);
+    myVideo.volume = val / 100;
+    console.log('After: ' + myVideo.volume);
 	}
 
 	function gray() {
