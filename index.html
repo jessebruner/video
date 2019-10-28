@@ -117,6 +117,8 @@
 	function random(){
 		// Use setProperty to change the grayscale filder and transform properties of the video.
 		// Log what the new values are to the console.
+		var r = Math.floor((Math.random() * 100) + 1)
+		document.getElementById("myVideo").style.transform = "skew(r, r)"
 	}
 	</script>
 
