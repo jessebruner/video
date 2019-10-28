@@ -60,17 +60,11 @@
 	skx: r,
 	sky: r
 	};
-	function setTransform (element, Transform) {
+
 	var transfromString = ("rotate(" + Transform.rot + "deg ) scale("
 			+ Transform.sca + ") skewX(" + Transform.skx + "deg ) skewY("
 			+ Transform.sky + "deg )");
 
-	element.style.webkitTransform = transfromString;
-	element.style.MozTransform = transfromString;
-	element.style.msTransform = transfromString;
-	element.style.OTransform = transfromString;
-	element.style.transform = transfromString;
-}
 		// You may only change code in the script tag.
 		// You can not change the HTML in the file.
   var vid = document.getElementById("myVideo");
@@ -135,8 +129,8 @@
 	function random(){
 		// Use setProperty to change the grayscale filder and transform properties of the video.
 		// Log what the new values are to the console.
-
-		setTransform(document.getElementById("myVideo"), Transform);
+	element.style.transform = transfromString;
+		setTransform(document.getElementById("myVideo").element.style.transform = transfromString;
 		console.log(r)
 
 		//document.getElementById("myVideo").style.transform = skew(r, r)
